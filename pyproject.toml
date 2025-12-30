@@ -5,7 +5,6 @@ description = "CLI idle game where you train skills via command prompt"
 authors = [
     {name = "Mason Munford",email = "masonmunford@gmail.com"}
 ]
-readme = "README.md"
 requires-python = "^3.12"
 dynamic = ["dependencies"]
 
@@ -13,8 +12,15 @@ dynamic = ["dependencies"]
 requires = ["poetry-core>=2.0.0,<3.0.0"]
 build-backend = "poetry.core.masonry.api"
 
+[tool.poetry.scripts]
+game = "legends_of_the_prompt.app:run"
+
+[tool.poetry.dependencies]
+textual = "^6.11.0"
+
 [tool.poetry.group.dev.dependencies]
 commitizen = ">=4.11.0,<5.0.0"
+textual-dev = "^1.8.0"
 
 [tool.commitizen]
 version_provider = "pep621"
