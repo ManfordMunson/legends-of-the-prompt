@@ -1,8 +1,9 @@
+from textual.containers import HorizontalGroup, Vertical
 from textual.screen import ModalScreen
-from textual.containers import HorizontalGroup,Vertical
 from textual.widgets import Button, Label
 
-class CloseScreen(ModalScreen[bool]):
+
+class CloseScreen(ModalScreen):
     def compose(self):
         with Vertical(id="dialog"):
             yield Label("Are you sure you want to quit?", id="question")
@@ -12,6 +13,6 @@ class CloseScreen(ModalScreen[bool]):
 
     def on_button_pressed(self, event: Button.Pressed) -> None:
         if event.button.id == "yes":
-            self.dismiss(True)
+            self.app.exit()
         else:
-            self.dismiss(False)
+            self.app.pop_screen()

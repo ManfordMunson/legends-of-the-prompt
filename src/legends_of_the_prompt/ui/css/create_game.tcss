@@ -1,0 +1,35 @@
+CreateGame {
+    border: green;
+    width: 100%;
+    height: 100%;
+    padding: 1;
+}
+
+#create-game-menu {
+    align: center middle;
+    width: 100%;
+    height: 100%;
+}
+
+#character-name-label {
+    color: yellow;
+}
+
+
+#character-name-input {
+    align: center middle;
+    width: 50%;
+    height: auto;
+    margin-bottom: 1;
+}
+
+
+#create-game-buttons {
+    align: center middle;
+    width: 50%;
+    height: auto;
+}
+
+#start-game-btn, #back-btn {
+    margin: 1;
+}

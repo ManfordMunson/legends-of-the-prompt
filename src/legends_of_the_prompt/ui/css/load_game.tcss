@@ -1,0 +1,43 @@
+LoadGame {
+    border: green;
+    width: 100%;
+    height: 100%;
+    padding: 1;
+}
+
+#load-game-container {
+    align: center middle;
+    width: 100%;
+    height: 100%;
+}
+
+#nested-load-game-container {
+    align: center middle;
+    width: 100%;
+    height: auto;
+}
+
+#select-character-label {
+    width: 50%;
+    height: auto;
+    color: yellow;
+    content-align: center middle;
+}
+
+#save-list {
+    width: 50%;
+    height: 100%;
+    margin-bottom: 1;
+}
+
+#load-game-buttons {
+    align: center middle;
+    width: auto;
+    height: auto;
+}
+
+.load-menu-btn {
+    width: 30;
+    margin-left: 1;
+    margin-bottom: 1;
+}

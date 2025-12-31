@@ -1,0 +1,45 @@
+GameScreen {
+    border: green;
+    width: 100%;
+    height: 100%;
+}
+
+#top-stats-bar {
+    height: 10%;
+    width: 50%;
+    background: $surface;
+    color: $text;
+    align: center middle;
+    margin: 1;
+}
+
+#top-skills-bar {
+    height: 10%;
+    width: 50%;
+    background: $surface;
+    color: $text;
+    align: center middle;
+    margin: 1;
+}
+
+.tab-container {
+    # width: 100%;
+    height: auto;
+    background: $boost;
+    padding: 2;
+}
+
+/* Styling the active tab labels */
+TabbedContent ContentTab {
+    color: $text-muted;
+}
+
+TabbedContent ContentTab.-active {
+    color: $accent;
+    text-style: bold;
+}
+
+.game-tab-container {
+    height: auto;
+    width: 100%;
+}

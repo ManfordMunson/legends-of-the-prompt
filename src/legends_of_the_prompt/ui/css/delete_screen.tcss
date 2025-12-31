@@ -1,0 +1,27 @@
+DeleteScreen {
+    align: center middle;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+#delete-dialog {
+    padding: 1 2;
+    background: $surface;
+    border: $error;
+    width: auto;
+    height: auto;
+}
+
+#delete-input {
+    margin: 1 0;
+    border: tall $error;
+}
+
+#delete-actions {
+    width: auto;
+    height: auto;
+    align: center middle;
+}
+
+#confirm, #cancel {
+    margin: 1;
+}
